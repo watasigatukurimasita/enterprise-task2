@@ -1,7 +1,21 @@
-git init
-echo "__pycache__/" > .gitignore
-git add .gitignore
-git commit -m "Initial commit: Add .gitignore"
+import math
 
-git add calc.py
-git commit -m
+def main():
+    print("--- 四則演算 ＋ 追加機能プログラム ---")
+    
+    try:
+        # キーボード入力 5点
+        num1 = int(input("1つ目の整数を入力してください: "))
+        num2 = int(input("2つ目の整数を入力してください: "))
+    except ValueError:
+        print("エラー: 半角の整数を入力してください。")
+        return
+
+    print("\n==============================")
+    print(" 📊 計算結果 (四則演算 10点)")
+    print("==============================")
+    print(f"{num1} + {num2} = {num1 + num2}")
+    print(f"{num1} - {num2} = {num1 - num2}")
+    print(f"{num1} × {num2} = {num1 * num2}")
+    
+  
