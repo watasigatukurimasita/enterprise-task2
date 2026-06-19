@@ -4,7 +4,7 @@ def main():
     print("--- 四則演算 ＋ 追加機能プログラム ---")
     
     try:
-        # キーボード入力 5点
+        
         num1 = int(input("1つ目の整数を入力してください: "))
         num2 = int(input("2つ目の整数を入力してください: "))
     except ValueError:
@@ -12,10 +12,20 @@ def main():
         return
 
     print("\n==============================")
-    print(" 📊 計算結果 (四則演算 10点)")
+    print(" 📊 計算結果 ")
     print("==============================")
     print(f"{num1} + {num2} = {num1 + num2}")
     print(f"{num1} - {num2} = {num1 - num2}")
     print(f"{num1} × {num2} = {num1 * num2}")
+      # 0での割り算対策
+    if num2 != 0:
+        print(f"{num1} ÷ {num2} = {num1 / num2:.2f}")
+    else:
+        print(f"{num1} ÷ {num2} = エラー (0で割ることはできません)")
+
+    print("\n==============================")
+    print(" ✨ 追加機能 )")
+    print("==============================")
     
+
   
