@@ -2,3 +2,6 @@ git init
 echo "__pycache__/" > .gitignore
 git add .gitignore
 git commit -m "Initial commit: Add .gitignore"
+
+git add calc.py
+git commit -m
