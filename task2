@@ -26,6 +26,12 @@ def main():
     print("\n==============================")
     print(" ✨ 追加機能 )")
     print("==============================")
-    
+   
+    if num1 > 0 and num2 > 0:
+        gcd = math.gcd(num1, num2)
+        lcm = (num1 * num2) // gcd
+        print(f"① {num1} と {num2} の「最小公倍数」: {lcm}")
+    else:
+        print("① 最小公倍数: 正の整数のときのみ計算できます")
 
-  
+   
